@@ -6,4 +6,4 @@ RUN pip install zxcvbn pyperclip
 
 COPY pwgen.py .
 
-CMD ["python", "pwgen.py"]
+CMD ["python", "pwgen.py"] 
