@@ -16,7 +16,7 @@ def get_eff_wordlist():
             parts = line.strip().split("\t")
             if len(parts) == 2:
                 words.append(parts[1])
-    return words
+    return words 
 
 def generate_passphrase(words=5):
     wordlist = get_eff_wordlist()
