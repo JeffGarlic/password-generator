@@ -2,7 +2,7 @@ import secrets
 import string
 import pyperclip
 from zxcvbn import zxcvbn
-import urllib.request
+import urllib.request 
 
 def generate_password(length=20):
     chars = string.ascii_letters + string.digits + "!@#$%^&*"
