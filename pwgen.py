@@ -12,7 +12,7 @@ def get_eff_wordlist():
     url = "https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt"
     words = []
     with urllib.request.urlopen(url) as response:
-        for line in response.read().decode().splitlines():
+        for line in response.read().decode().splitlines(): 
             parts = line.strip().split("\t")
             if len(parts) == 2:
                 words.append(parts[1])
