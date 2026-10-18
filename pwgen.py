@@ -9,7 +9,7 @@ def generate_password(length=20):
     return "".join(secrets.choice(chars) for _ in range(length)) 
  
 def get_eff_wordlist():
-    url = "https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt"
+    url = "https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt" 
     words = []
     with urllib.request.urlopen(url) as response:
         for line in response.read().decode().splitlines(): 
