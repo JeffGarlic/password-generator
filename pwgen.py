@@ -5,7 +5,7 @@ from zxcvbn import zxcvbn
 import urllib.request 
 
 def generate_password(length=20):
-    chars = string.ascii_letters + string.digits + "!@#$%^&*"
+    chars = string.ascii_letters + string.digits + "!@#$%^&*" 
     return "".join(secrets.choice(chars) for _ in range(length)) 
  
 def get_eff_wordlist():
